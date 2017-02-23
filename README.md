@@ -7,7 +7,7 @@
 
     'modules' => [
         'area'=>[
-            'class'=>'huluwa\area\Module'
+            'class'=>'dungang\area\Module'
         ],
     ],
     
@@ -27,11 +27,11 @@ php yii area/create-area
 ```php
 
 <?php 
-use huluwa\common\widgets\ActiveForm;
+use dungang\area\widgets\ActiveForm;
 $form = ActiveForm::begin()?>
 
 // like this
-<?= $form->field($model, ['provinceCode', 'cityCode', 'areaCode'])->widget(\huluwa\area\widgets\AreaWidget::className(), [
+<?= $form->field($model, ['provinceCode', 'cityCode', 'areaCode'])->widget(\dungang\area\widgets\AreaWidget::className(), [
     'clientOptions' => [
         'url' => \yii\helpers\Url::toRoute('/area/info'),
         //'enabled' => false
@@ -39,7 +39,7 @@ $form = ActiveForm::begin()?>
 ]) ?>
 
 // or like this
-<?= \huluwa\area\widgets\AreaWidget::widget([
+<?= \dungang\area\widgets\AreaWidget::widget([
     'name'=>'provinceCodecityCodeareaCode',
     'clientOptions' => [
         'url' => \yii\helpers\Url::toRoute('/area/info'),
