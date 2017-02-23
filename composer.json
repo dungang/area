@@ -1,0 +1,24 @@
+{
+  "name": "dungang/area",
+  "description": "Area of china for Yii2 省份城市地区",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "dun gang",
+      "email": "dungang@126.com",
+      "homepage": "https://github.com/dungang",
+      "role": "Creator"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.5",
+    "yiisoft/yii2-bootstrap": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "dungang\\area\\": ""
+    }
+  }
+}
